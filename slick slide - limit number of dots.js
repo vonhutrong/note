@@ -36,6 +36,6 @@ function ClassDotsManager(slickElementId, numOfItems, numOfDots) {
 var dotsManager = new ClassDotsManager("small-preview", listLinks.length, 6);
 dotsManager.init();
 
-smallPreviewElement.on("afterChange", function (slick, currentSlide) {
+$("small-preview").on("afterChange", function (slick, currentSlide) {
     dotsManager.updateDots(currentSlide.currentSlide);
 });
