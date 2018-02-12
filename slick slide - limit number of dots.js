@@ -33,7 +33,7 @@ function ClassDotsManager(slickElementId, numOfItems, numOfDots) {
 //=====================================================================
 // usage (with "small-preview" is the id of div that is used for slick)
 //=====================================================================
-var numberOfItems = getNumberOfItems();
+var numberOfItems = getNumberOfItems(); //get number of pictures on the slide
 var dotsManager = new ClassDotsManager("small-preview", numberOfItems, 6);
 dotsManager.init();
 
