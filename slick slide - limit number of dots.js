@@ -33,7 +33,8 @@ function ClassDotsManager(slickElementId, numOfItems, numOfDots) {
 //=====================================================================
 // usage (with "small-preview" is the id of div that is used for slick)
 //=====================================================================
-var dotsManager = new ClassDotsManager("small-preview", listLinks.length, 6);
+var numberOfItems = getNumberOfItems();
+var dotsManager = new ClassDotsManager("small-preview", numberOfItems, 6);
 dotsManager.init();
 
 $("small-preview").on("afterChange", function (slick, currentSlide) {
